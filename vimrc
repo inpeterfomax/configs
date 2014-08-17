@@ -8,11 +8,11 @@ endfunc
 
 
 
-"colorscheme torte
-"colorscheme murphy
-"colorscheme desert 
-"colorscheme desert 
-"colorscheme elflord
+colorscheme torte
+colorscheme murphy
+colorscheme desert 
+colorscheme desert 
+colorscheme elflord
 colorscheme ron
 
 
