@@ -1,0 +1,36 @@
+
+"this is from peter
+if filereadable("/home/peter/.config/vim/vimrc")
+"	source /home/peter/.config/vim/vimrc
+endif
+
+"set the vim for $(HOME)
+set nocompatible
+filetype plugin on
+set ts=4 
+set nu
+"make the vim remember the line unmber.
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+"set for cscope 
+"could i set CSCOPE_DB here ?
+"
+"how to add other types of file to cscope.file
+"	find . -type f > cscope.file 
+"then, cscope will add new kind of files into the cross-reference.
+if has("cscope")
+	"the command location
+	set csprg=/usr/bin/cscope
+	"....
+	set cst
+	set nocsverb
+	"add any cscope data base file in current dictionary
+	if filereadable("cscope.out")
+		cs add cscope.out
+	"elseif 
+	elseif $CSCOPE_DB != "" 
+		cs add $CSCOPE_DB
+	endif
+	set csverb
+endif
