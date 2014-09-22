@@ -1,0 +1,10 @@
+auto-complete
+
+1.ctrl-n ctrl-p
+2.ctrl-x ctrl-l	;complete a line
+3.ctrl-x ctrl-n ;complete the critical words
+4.ctrl-x ctrl-i	;competet depending on include files
+5.ctrl-x ctrl-v	;command
+6.ctrl-x ctrl-f ;compete files name under current directory
+
+
